@@ -10,7 +10,7 @@
 //
 // JANGAN diakhiri tanda garis miring "/" di bagian akhir.
 // ==========================================================
-const BASE_URL = "https://website-saya.com";
+const BASE_URL = "https://github.com/MrYanzy/Website-tanaman.git";
 
 // ==========================================================
 // BAGIAN 1: TOGGLE BAHASA (Indonesia / English)
