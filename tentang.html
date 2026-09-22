@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang - Website Tanaman Sekolah</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="lang-id">
+
+  <header class="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">🌱 Tanaman Sekolah</a>
+      <ul class="navbar-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="tanaman.html">Daftar Tanaman</a></li>
+        <li><a href="qr/index.html">QR Code</a></li>
+        <li><a href="tentang.html" class="active">Tentang</a></li>
+      </ul>
+      <div class="lang-toggle">
+        <button data-lang-btn="id">ID</button>
+        <button data-lang-btn="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="section-title">
+        <span class="lang-id-text">Tentang Website Ini</span>
+        <span class="lang-en-text">About This Website</span>
+      </h1>
+      <p class="lang-id-text" style="max-width:640px;">
+        Website ini dibuat sebagai tugas/proyek sekolah untuk mengenalkan tanaman yang ada
+        di lingkungan sekolah menggunakan QR Code. Setiap tanaman memiliki QR Code yang bisa
+        dipindai untuk membuka halaman informasi tanaman tersebut secara langsung.
+      </p>
+      <p class="lang-en-text" style="max-width:640px;">
+        This website was created as a school assignment/project to introduce the plants
+        found on our school grounds using QR Codes. Each plant has a QR Code that can be
+        scanned to open that plant's information page directly.
+      </p>
+
+      <dl class="identity-box">
+        <dt class="lang-id-text">Nama Kelompok</dt>
+        <dt class="lang-en-text">Group Name</dt>
+        <dd>[NAMA KELOMPOK]</dd>
+
+        <dt class="lang-id-text">Nama Anggota</dt>
+        <dt class="lang-en-text">Member Names</dt>
+        <dd>[NAMA ANGGOTA]</dd>
+
+        <dt class="lang-id-text">Kelas</dt>
+        <dt class="lang-en-text">Class</dt>
+        <dd>[KELAS]</dd>
+
+        <dt class="lang-id-text">Sekolah</dt>
+        <dt class="lang-en-text">School</dt>
+        <dd>[NAMA SEKOLAH]</dd>
+      </dl>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>[NAMA KELOMPOK] &middot; [NAMA ANGGOTA] &middot; [KELAS] &middot; [NAMA SEKOLAH]</p>
+    </div>
+  </footer>
+
+  <script src="js/plants-data.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    initLangToggle();
+  </script>
+</body>
+</html>

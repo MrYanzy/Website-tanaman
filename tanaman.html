@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Tanaman - Website Tanaman Sekolah</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="lang-id">
+
+  <header class="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">🌱 Tanaman Sekolah</a>
+      <ul class="navbar-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="tanaman.html" class="active">Daftar Tanaman</a></li>
+        <li><a href="qr/index.html">QR Code</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+      </ul>
+      <div class="lang-toggle">
+        <button data-lang-btn="id">ID</button>
+        <button data-lang-btn="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="section-title">
+        <span class="lang-id-text">Daftar Tanaman</span>
+        <span class="lang-en-text">Plant List</span>
+      </h1>
+      <p class="section-desc">
+        <span class="lang-id-text">Ada 6 tanaman yang bisa kamu pelajari. Klik "Lihat Detail" untuk membaca informasi lengkapnya.</span>
+        <span class="lang-en-text">There are 6 plants to learn about. Click "View Details" to read the full information.</span>
+      </p>
+
+      <div class="search-box">
+        <input
+          type="text"
+          id="search-input"
+          class="lang-id-text"
+          placeholder="Cari nama tanaman..."
+        >
+        <input
+          type="text"
+          id="search-input-en"
+          class="lang-en-text"
+          placeholder="Search plant name..."
+        >
+      </div>
+
+      <div class="plant-grid" id="all-plant-cards"></div>
+      <p id="all-plant-cards-empty" style="display:none; color:var(--color-muted);">
+        <span class="lang-id-text">Tanaman tidak ditemukan.</span>
+        <span class="lang-en-text">No plant found.</span>
+      </p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>[NAMA KELOMPOK] &middot; [NAMA ANGGOTA] &middot; [KELAS] &middot; [NAMA SEKOLAH]</p>
+    </div>
+  </footer>
+
+  <script src="js/plants-data.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    initLangToggle();
+
+    function doRender() {
+      const idVal = document.getElementById("search-input").value;
+      const enVal = document.getElementById("search-input-en").value;
+      const keyword = currentLang() === "en" ? enVal : idVal;
+      renderPlantCards("all-plant-cards", "", null, keyword);
+    }
+
+    doRender();
+    document.addEventListener("langchange", doRender);
+    document.getElementById("search-input").addEventListener("input", doRender);
+    document.getElementById("search-input-en").addEventListener("input", doRender);
+  </script>
+</body>
+</html>

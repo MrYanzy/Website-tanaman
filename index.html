@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Tanaman Sekolah - Beranda</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="lang-id">
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">🌱 Tanaman Sekolah</a>
+      <ul class="navbar-links">
+        <li><a href="index.html" class="active">Beranda</a></li>
+        <li><a href="tanaman.html">Daftar Tanaman</a></li>
+        <li><a href="qr/index.html">QR Code</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+      </ul>
+      <div class="lang-toggle">
+        <button data-lang-btn="id">ID</button>
+        <button data-lang-btn="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="lang-id-text">Kenali Tanaman di Sekolah Kami Lewat Scan QR Code</h1>
+      <h1 class="lang-en-text">Get to Know Our School Plants by Scanning a QR Code</h1>
+
+      <p class="lang-id-text">
+        Website ini dibuat sebagai media informasi tanaman yang ada di lingkungan sekolah.
+        Setiap tanaman memiliki QR Code sendiri yang bisa dipindai untuk langsung membuka
+        halaman informasi tanaman tersebut — mulai dari nama latin, ciri-ciri, manfaat,
+        cara perawatan, hingga habitatnya.
+      </p>
+      <p class="lang-en-text">
+        This website provides information about the plants growing on our school grounds.
+        Each plant has its own QR Code that can be scanned to open its information page
+        directly — including its scientific name, characteristics, benefits, care tips,
+        and habitat.
+      </p>
+
+      <a class="btn" href="tanaman.html">
+        <span class="lang-id-text">Lihat Daftar Tanaman</span>
+        <span class="lang-en-text">View Plant List</span>
+      </a>
+
+      <div class="info-box">
+        <h3 class="lang-id-text">Bagaimana cara memakainya?</h3>
+        <h3 class="lang-en-text">How does it work?</h3>
+        <p class="lang-id-text">
+          Cari QR Code yang tertempel di dekat tanaman, lalu pindai menggunakan kamera HP.
+          Kamu akan langsung diarahkan ke halaman informasi tanaman tersebut, tanpa perlu
+          mencarinya secara manual.
+        </p>
+        <p class="lang-en-text">
+          Find the QR Code placed near a plant, then scan it with your phone camera.
+          You will be taken directly to that plant's information page — no need to
+          search for it manually.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEBERAPA TANAMAN -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="lang-id-text">Beberapa Tanaman Kami</span>
+        <span class="lang-en-text">Some of Our Plants</span>
+      </h2>
+      <p class="section-desc">
+        <span class="lang-id-text">Berikut beberapa contoh tanaman yang bisa kamu pelajari di website ini.</span>
+        <span class="lang-en-text">Here are a few of the plants you can learn about on this website.</span>
+      </p>
+
+      <div class="plant-grid" id="home-plant-cards"></div>
+
+      <p style="margin-top:20px;">
+        <a class="btn btn-outline" href="tanaman.html">
+          <span class="lang-id-text">Lihat Semua Tanaman (6)</span>
+          <span class="lang-en-text">View All Plants (6)</span>
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>[Tanaman Pangan] &middot; [NAMA ANGGOTA] &middot; [X Tkj, Rpl, Tkr & XI Tkj, RPl, Tkr] &middot; [NAMA SEKOLAH]</p>
+    </div>
+  </footer>
+
+  <script src="js/plants-data.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    initLangToggle();
+    renderPlantCards("home-plant-cards", "", 3);
+    document.addEventListener("langchange", function () {
+      renderPlantCards("home-plant-cards", "", 3);
+    });
+  </script>
+</body>
+</html>

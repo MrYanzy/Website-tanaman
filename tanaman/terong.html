@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terong - Website Tanaman Sekolah</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="lang-id">
+
+  <header class="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">&#127793; Tanaman Sekolah</a>
+      <ul class="navbar-links">
+        <li><a href="../index.html">Beranda</a></li>
+        <li><a href="../tanaman.html" class="active">Daftar Tanaman</a></li>
+        <li><a href="../qr/index.html">QR Code</a></li>
+        <li><a href="../tentang.html">Tentang</a></li>
+      </ul>
+      <div class="lang-toggle">
+        <button data-lang-btn="id">ID</button>
+        <button data-lang-btn="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <div class="detail-header">
+      <img src="../images/terong.jpg" alt="Terong">
+      <div class="detail-header-text">
+        <h1 class="lang-id-text">Terong</h1>
+        <h1 class="lang-en-text">Eggplant</h1>
+        <p class="latin">Solanum melongena</p>
+        <a class="back-link lang-id-text" href="../tanaman.html">&larr; Kembali ke Daftar Tanaman</a>
+        <a class="back-link lang-en-text" href="../tanaman.html">&larr; Back to Plant List</a>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <h2 class="lang-id-text">Deskripsi</h2>
+      <h2 class="lang-en-text">Description</h2>
+      <p class="lang-id-text">Terong adalah tanaman sayuran yang buahnya berbentuk lonjong berwarna ungu. Buah ini sering diolah menjadi berbagai masakan sehari-hari.</p>
+      <p class="lang-en-text">Eggplant is a vegetable plant with an oval, purple-colored fruit. It is commonly cooked into a variety of everyday dishes.</p>
+    </div>
+
+    <div class="detail-block">
+      <h2 class="lang-id-text">Ciri-ciri</h2>
+      <h2 class="lang-en-text">Characteristics</h2>
+      <ul class="lang-id-text">
+              <li>Buah lonjong berwarna ungu mengkilap</li>
+              <li>Daun lebar dengan permukaan berbulu halus</li>
+              <li>Batang memiliki duri kecil</li>
+              <li>Tumbuh sebagai semak setinggi 40-150 cm</li>
+      </ul>
+      <ul class="lang-en-text">
+              <li>Glossy purple, oval-shaped fruit</li>
+              <li>Broad leaves with a finely hairy surface</li>
+              <li>Stem has small thorns</li>
+              <li>Grows as a shrub 40-150 cm tall</li>
+      </ul>
+    </div>
+
+    <div class="detail-block">
+      <h2 class="lang-id-text">Manfaat</h2>
+      <h2 class="lang-en-text">Benefits</h2>
+      <ul class="lang-id-text">
+              <li>Sumber serat dan antioksidan</li>
+              <li>Rendah kalori</li>
+              <li>Mengandung berbagai vitamin dan mineral</li>
+              <li>Baik dikonsumsi sebagai bagian dari menu sehat</li>
+      </ul>
+      <ul class="lang-en-text">
+              <li>A source of fiber and antioxidants</li>
+              <li>Low in calories</li>
+              <li>Contains various vitamins and minerals</li>
+              <li>Good as part of a healthy diet</li>
+      </ul>
+    </div>
+
+    <div class="detail-block">
+      <h2 class="lang-id-text">Cara Perawatan</h2>
+      <h2 class="lang-en-text">How to Care</h2>
+      <ul class="lang-id-text">
+              <li>Disiram secara rutin</li>
+              <li>Ditanam di tempat yang terkena sinar matahari penuh</li>
+              <li>Berikan pupuk secara berkala</li>
+              <li>Lakukan pengendalian hama secara rutin</li>
+      </ul>
+      <ul class="lang-en-text">
+              <li>Water regularly</li>
+              <li>Plant in a spot with full sunlight</li>
+              <li>Fertilize periodically</li>
+              <li>Control pests routinely</li>
+      </ul>
+    </div>
+
+    <div class="detail-block">
+      <h2 class="lang-id-text">Habitat</h2>
+      <h2 class="lang-en-text">Habitat</h2>
+      <p class="lang-id-text">Tumbuh baik di dataran rendah hingga menengah dengan tanah yang subur dan gembur.</p>
+      <p class="lang-en-text">Grows well in lowland to medium-elevation areas with fertile, loose soil.</p>
+    </div>
+
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>[NAMA KELOMPOK] &middot; [NAMA ANGGOTA] &middot; [KELAS] &middot; [NAMA SEKOLAH]</p>
+    </div>
+  </footer>
+
+  <script src="../js/plants-data.js"></script>
+  <script src="../js/script.js"></script>
+  <script>
+    initLangToggle();
+    setupDetailPage("terong");
+  </script>
+</body>
+</html>

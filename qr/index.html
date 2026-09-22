@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Tanaman - Website Tanaman Sekolah</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="lang-id">
+
+  <header class="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">🌱 Tanaman Sekolah</a>
+      <ul class="navbar-links">
+        <li><a href="../index.html">Beranda</a></li>
+        <li><a href="../tanaman.html">Daftar Tanaman</a></li>
+        <li><a href="index.html" class="active">QR Code</a></li>
+        <li><a href="../tentang.html">Tentang</a></li>
+      </ul>
+      <div class="lang-toggle">
+        <button data-lang-btn="id">ID</button>
+        <button data-lang-btn="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="section-title">
+        <span class="lang-id-text">QR Code Tanaman</span>
+        <span class="lang-en-text">Plant QR Codes</span>
+      </h1>
+      <p class="section-desc lang-id-text">
+        Cetak dan tempelkan QR Code berikut di dekat tanaman yang sesuai. Setiap QR Code
+        akan langsung membuka halaman informasi tanaman tersebut.
+      </p>
+      <p class="section-desc lang-en-text">
+        Print and place the QR Code below near its matching plant. Each QR Code opens that
+        plant's information page directly.
+      </p>
+
+      <p id="qr-baseurl-warning" style="display:none; background:#fdf1ea; border:1px solid var(--color-accent); border-radius:8px; padding:10px 14px; color:var(--color-accent); font-size:0.9rem;">
+        <span class="lang-id-text">
+          ⚠️ BASE_URL di file js/script.js masih memakai contoh (belum diganti). QR Code di
+          bawah ini belum akan berfungsi untuk orang lain sampai kamu menggantinya dengan
+          alamat website kamu yang sudah online.
+        </span>
+        <span class="lang-en-text">
+          ⚠️ BASE_URL in js/script.js is still the placeholder (not changed yet). The QR
+          Codes below will not work for other people until you replace it with your live
+          website address.
+        </span>
+      </p>
+
+      <div class="qr-grid" id="qr-cards"></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>[NAMA KELOMPOK] &middot; [NAMA ANGGOTA] &middot; [KELAS] &middot; [NAMA SEKOLAH]</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="../js/plants-data.js"></script>
+  <script src="../js/script.js"></script>
+  <script>
+    initLangToggle();
+    renderQRCodes("qr-cards");
+
+    if (BASE_URL.indexOf("website-saya.com") !== -1) {
+      document.getElementById("qr-baseurl-warning").style.display = "block";
+    }
+  </script>
+</body>
+</html>

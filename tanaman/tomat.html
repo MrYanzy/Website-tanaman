@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tomat - Website Tanaman Sekolah</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="lang-id">
+
+  <header class="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">&#127793; Tanaman Sekolah</a>
+      <ul class="navbar-links">
+        <li><a href="../index.html">Beranda</a></li>
+        <li><a href="../tanaman.html" class="active">Daftar Tanaman</a></li>
+        <li><a href="../qr/index.html">QR Code</a></li>
+        <li><a href="../tentang.html">Tentang</a></li>
+      </ul>
+      <div class="lang-toggle">
+        <button data-lang-btn="id">ID</button>
+        <button data-lang-btn="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <div class="detail-header">
+      <img src="../images/tomat.jpg" alt="Tomat">
+      <div class="detail-header-text">
+        <h1 class="lang-id-text">Tomat</h1>
+        <h1 class="lang-en-text">Tomato</h1>
+        <p class="latin">Solanum lycopersicum</p>
+        <a class="back-link lang-id-text" href="../tanaman.html">&larr; Kembali ke Daftar Tanaman</a>
+        <a class="back-link lang-en-text" href="../tanaman.html">&larr; Back to Plant List</a>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <h2 class="lang-id-text">Deskripsi</h2>
+      <h2 class="lang-en-text">Description</h2>
+      <p class="lang-id-text">Tomat adalah tanaman yang buahnya berwarna merah saat matang. Buah ini banyak digunakan sebagai bahan masakan, sambal, hingga minuman.</p>
+      <p class="lang-en-text">Tomato is a plant whose fruit turns red when ripe. It is widely used as an ingredient in cooking, sambal, and drinks.</p>
+    </div>
+
+    <div class="detail-block">
+      <h2 class="lang-id-text">Ciri-ciri</h2>
+      <h2 class="lang-en-text">Characteristics</h2>
+      <ul class="lang-id-text">
+              <li>Buah bulat, hijau saat muda dan merah saat matang</li>
+              <li>Daun bergerigi dengan aroma khas</li>
+              <li>Batang lunak dan berbulu halus</li>
+              <li>Membutuhkan penyangga (ajir) saat tumbuh tinggi</li>
+      </ul>
+      <ul class="lang-en-text">
+              <li>Round fruit, green when young and red when ripe</li>
+              <li>Serrated leaves with a distinctive scent</li>
+              <li>Soft, finely hairy stem</li>
+              <li>Needs a stake for support as it grows taller</li>
+      </ul>
+    </div>
+
+    <div class="detail-block">
+      <h2 class="lang-id-text">Manfaat</h2>
+      <h2 class="lang-en-text">Benefits</h2>
+      <ul class="lang-id-text">
+              <li>Sumber vitamin C dan likopen</li>
+              <li>Baik untuk kesehatan kulit dan jantung</li>
+              <li>Sering digunakan sebagai bahan masakan sehari-hari</li>
+              <li>Bisa dikonsumsi langsung sebagai buah segar</li>
+      </ul>
+      <ul class="lang-en-text">
+              <li>A source of vitamin C and lycopene</li>
+              <li>Good for skin and heart health</li>
+              <li>Commonly used as a daily cooking ingredient</li>
+              <li>Can be eaten fresh as a fruit</li>
+      </ul>
+    </div>
+
+    <div class="detail-block">
+      <h2 class="lang-id-text">Cara Perawatan</h2>
+      <h2 class="lang-en-text">How to Care</h2>
+      <ul class="lang-id-text">
+              <li>Disiram secara teratur</li>
+              <li>Membutuhkan sinar matahari penuh</li>
+              <li>Gunakan ajir/tiang penyangga saat tanaman mulai tinggi</li>
+              <li>Pemupukan dilakukan secara rutin</li>
+      </ul>
+      <ul class="lang-en-text">
+              <li>Water regularly</li>
+              <li>Needs full sunlight</li>
+              <li>Use a stake for support once the plant grows taller</li>
+              <li>Fertilize routinely</li>
+      </ul>
+    </div>
+
+    <div class="detail-block">
+      <h2 class="lang-id-text">Habitat</h2>
+      <h2 class="lang-en-text">Habitat</h2>
+      <p class="lang-id-text">Tumbuh baik di dataran rendah hingga dataran tinggi dengan suhu sejuk dan tanah yang subur.</p>
+      <p class="lang-en-text">Grows well in lowland to highland areas with cool temperatures and fertile soil.</p>
+    </div>
+
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>[NAMA KELOMPOK] &middot; [NAMA ANGGOTA] &middot; [KELAS] &middot; [NAMA SEKOLAH]</p>
+    </div>
+  </footer>
+
+  <script src="../js/plants-data.js"></script>
+  <script src="../js/script.js"></script>
+  <script>
+    initLangToggle();
+    setupDetailPage("tomat");
+  </script>
+</body>
+</html>
